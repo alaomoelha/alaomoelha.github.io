@@ -1,0 +1,1367 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91传媒照片 - 官方视频门户_影像记录与创作者社区</title>
+<meta name="description" content="91传媒照片官方网站是专注于影像记录与视觉创作的视频内容平台，汇聚企业与原创创作者，提供高清精品内容、品牌故事与持续运营的影像社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23161a22'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23ff5c39' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23ff5c39'/%3E%3C/svg%3E">
+<style>
+:root{
+  --c91-bg:#0f1218;
+  --c91-panel:#171c26;
+  --c91-panel2:#1e2532;
+  --c91-line:#2a3242;
+  --c91-text:#e8ecf3;
+  --c91-dim:#9aa6b8;
+  --c91-accent:#ff5c39;
+  --c91-accent2:#37e0b0;
+  --c91-amber:#ffc247;
+  --c91-radius:14px;
+  --c91-max:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--c91-bg);
+  color:var(--c91-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;font-size:inherit}
+.c91-container{width:100%;max-width:var(--c91-max);margin:0 auto;padding:0 24px}
+.c91-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.c91-sticky-top{
+  position:sticky;top:0;z-index:90;
+  background:rgba(15,18,24,.96);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--c91-line);
+}
+.c91-announce{
+  background:linear-gradient(90deg,#ff5c39,#ff8b4d 60%,#ffc247);
+  color:#1a1208;
+  font-size:13.5px;
+  font-weight:600;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.c91-announce-inner{
+  display:flex;align-items:center;gap:14px;
+  max-width:var(--c91-max);margin:0 auto;padding:7px 24px;
+}
+.c91-announce-tag{
+  background:#1a1208;color:#ffc247;
+  font-size:11px;letter-spacing:.12em;
+  padding:2px 8px;border-radius:4px;flex:none;
+}
+.c91-announce-track{
+  overflow:hidden;flex:1;position:relative;
+}
+.c91-announce-track span{
+  display:inline-block;padding-right:60px;
+  animation:c91-marquee 26s linear infinite;
+}
+@keyframes c91-marquee{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+.c91-header{
+  display:flex;align-items:center;gap:26px;
+  max-width:var(--c91-max);margin:0 auto;padding:12px 24px;
+}
+.c91-logo{display:flex;align-items:center;gap:11px;flex:none}
+.c91-logo-mark{
+  width:40px;height:40px;border-radius:11px;flex:none;
+  background:linear-gradient(140deg,#ff5c39,#b32a10);
+  display:grid;place-items:center;
+}
+.c91-logo-mark svg{width:22px;height:22px}
+.c91-logo-txt strong{display:block;font-size:17.5px;letter-spacing:.01em;line-height:1.25}
+.c91-logo-txt small{display:block;font-size:10.5px;color:var(--c91-dim);letter-spacing:.22em;text-transform:uppercase}
+.c91-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.c91-nav a{
+  font-size:14px;color:var(--c91-dim);padding:7px 12px;border-radius:8px;
+  transition:color .2s,background .2s;white-space:nowrap;
+}
+.c91-nav a:hover{color:var(--c91-text);background:var(--c91-panel2)}
+.c91-head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.c91-search{
+  display:flex;align-items:center;gap:7px;
+  background:var(--c91-panel);border:1px solid var(--c91-line);
+  border-radius:999px;padding:6px 12px;width:196px;
+  transition:border-color .2s;
+}
+.c91-search:focus-within{border-color:var(--c91-accent)}
+.c91-search svg{width:15px;height:15px;color:var(--c91-dim);flex:none}
+.c91-search input{
+  background:none;border:none;outline:none;color:var(--c91-text);
+  font-size:13px;width:100%;
+}
+.c91-search input::placeholder{color:#66718a}
+.c91-btn{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:13.5px;font-weight:600;padding:9px 17px;border-radius:999px;
+  transition:transform .18s,box-shadow .18s,background .18s;
+}
+.c91-btn:hover{transform:translateY(-1px)}
+.c91-btn-solid{background:var(--c91-accent);color:#fff;box-shadow:0 6px 20px rgba(255,92,57,.28)}
+.c91-btn-solid:hover{background:#ff6f50}
+.c91-btn-ghost{border:1px solid var(--c91-line);color:var(--c91-text)}
+.c91-btn-ghost:hover{border-color:var(--c91-accent);color:var(--c91-accent)}
+.c91-burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--c91-line);align-items:center;justify-content:center;flex:none}
+.c91-burger span{display:block;width:18px;height:2px;background:var(--c91-text);position:relative}
+.c91-burger span::before,.c91-burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--c91-text)}
+.c91-burger span::before{top:-6px}
+.c91-burger span::after{top:6px}
+.c91-search-feedback{
+  display:none;font-size:12px;color:var(--c91-accent2);
+  padding:0 24px 9px;max-width:var(--c91-max);margin:0 auto;
+}
+.c91-search-feedback.c91-on{display:block}
+@media(max-width:960px){
+  .c91-nav{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:var(--c91-panel);flex-direction:column;padding:12px 24px 20px;
+    border-bottom:1px solid var(--c91-line);gap:2px;
+  }
+  .c91-nav.c91-open{display:flex}
+  .c91-nav a{padding:11px 8px;font-size:15px}
+  .c91-burger{display:flex}
+  .c91-head-tools{flex:1;justify-content:flex-end}
+  .c91-search{width:138px}
+  .c91-header{position:relative;flex-wrap:wrap}
+}
+
+/* ---------- 首屏：全幅主视觉背景与浮动文字 ---------- */
+.c91-hero{
+  position:relative;overflow:hidden;
+  min-height:560px;display:flex;align-items:center;
+  border-bottom:1px solid var(--c91-line);
+}
+.c91-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
+.c91-hero-shade{
+  position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(15,18,24,.95) 0%,rgba(15,18,24,.78) 46%,rgba(15,18,24,.42) 100%);
+}
+.c91-hero-inner{position:relative;z-index:2;padding:72px 0 64px}
+.c91-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid rgba(255,92,57,.5);background:rgba(255,92,57,.12);
+  color:#ffb4a1;font-size:12px;letter-spacing:.1em;
+  padding:5px 12px;border-radius:999px;margin-bottom:22px;
+}
+.c91-hero-badge i{width:6px;height:6px;border-radius:50%;background:var(--c91-accent);display:block}
+.c91-hero h1{
+  font-size:clamp(38px,6.2vw,68px);line-height:1.08;letter-spacing:-.02em;
+  margin-bottom:18px;font-weight:800;
+}
+.c91-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,#ff5c39,#ffc247);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.c91-hero-sub{font-size:17px;color:#c4cddb;max-width:620px;margin-bottom:14px}
+.c91-hero-desc{
+  font-size:14.5px;color:var(--c91-dim);max-width:660px;
+  border-left:3px solid var(--c91-accent);padding-left:16px;margin-bottom:26px;
+}
+.c91-hero-stats{display:flex;gap:34px;flex-wrap:wrap;margin-bottom:30px}
+.c91-hero-stat strong{display:block;font-size:26px;line-height:1.2;color:#fff}
+.c91-hero-stat strong span{font-size:14px;color:var(--c91-accent2);margin-left:3px}
+.c91-hero-stat small{font-size:12px;color:var(--c91-dim);letter-spacing:.05em}
+.c91-hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+@media(max-width:600px){
+  .c91-hero{min-height:auto}
+  .c91-hero-inner{padding:48px 0 44px}
+  .c91-hero-stats{gap:22px}
+}
+
+/* ---------- 通用 section ---------- */
+.c91-sec{padding:66px 0}
+.c91-sec-head{margin-bottom:34px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.c91-sec-kicker{
+  font-size:12px;letter-spacing:.24em;color:var(--c91-accent);
+  text-transform:uppercase;margin-bottom:8px;font-weight:700;
+}
+.c91-sec-head h2{font-size:clamp(23px,3.2vw,32px);line-height:1.25;letter-spacing:-.01em}
+.c91-sec-head p{font-size:14px;color:var(--c91-dim);max-width:520px;margin-top:8px}
+.c91-sec-alt{background:var(--c91-panel)}
+.c91-tagsline{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.c91-chip{
+  font-size:12.5px;color:var(--c91-dim);border:1px solid var(--c91-line);
+  padding:4px 11px;border-radius:999px;transition:.2s;
+}
+.c91-chip:hover,.c91-chip.c91-active{border-color:var(--c91-accent);color:var(--c91-accent);background:rgba(255,92,57,.08)}
+
+/* ---------- 一处重点大图 + 文字列表 ---------- */
+.c91-focus-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:start}
+.c91-focus-main{border-radius:var(--c91-radius);overflow:hidden;background:var(--c91-panel);border:1px solid var(--c91-line);transition:transform .25s,border-color .25s}
+.c91-focus-main:hover{transform:translateY(-3px);border-color:#3a465c}
+.c91-focus-cover{position:relative;aspect-ratio:16/9;overflow:hidden}
+.c91-focus-cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.c91-focus-main:hover .c91-focus-cover img{transform:scale(1.04)}
+.c91-play{
+  position:absolute;left:16px;bottom:16px;display:flex;align-items:center;gap:8px;
+  background:rgba(15,18,24,.78);backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:999px;padding:5px 13px 5px 6px;font-size:12.5px;
+}
+.c91-play i{width:24px;height:24px;border-radius:50%;background:var(--c91-accent);display:grid;place-items:center;flex:none}
+.c91-play i::after{content:"";width:0;height:0;border-left:7px solid #fff;border-top:4.5px solid transparent;border-bottom:4.5px solid transparent;margin-left:2px}
+.c91-focus-body{padding:20px 22px 22px}
+.c91-focus-body h3{font-size:20px;line-height:1.4;margin-bottom:10px}
+.c91-focus-body p{font-size:14px;color:var(--c91-dim);margin-bottom:14px}
+.c91-meta{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#7f8ca1;margin-bottom:14px}
+.c91-actions{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.c91-act{
+  display:inline-flex;align-items:center;gap:6px;font-size:12.5px;
+  border:1px solid var(--c91-line);border-radius:999px;padding:5px 12px;
+  color:var(--c91-dim);transition:.2s;
+}
+.c91-act:hover{border-color:var(--c91-accent);color:var(--c91-accent)}
+.c91-act.c91-liked{color:var(--c91-accent);border-color:var(--c91-accent);background:rgba(255,92,57,.1)}
+.c91-act.c91-saved{color:var(--c91-amber);border-color:var(--c91-amber);background:rgba(255,194,71,.1)}
+.c91-list-item{
+  display:grid;grid-template-columns:34px 1fr;gap:14px;
+  padding:16px 0;border-bottom:1px dashed var(--c91-line);
+}
+.c91-list-item:last-child{border-bottom:none}
+.c91-list-no{font-size:15px;font-weight:800;color:#3f4b60;line-height:1.5}
+.c91-list-item h3{font-size:15.5px;line-height:1.45;margin-bottom:5px}
+.c91-list-item p{font-size:13px;color:var(--c91-dim);margin-bottom:8px}
+.c91-list-item .c91-meta{margin-bottom:8px}
+@media(max-width:860px){.c91-focus-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- 两列图文卡片 ---------- */
+.c91-cards2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.c91-card{
+  background:var(--c91-panel);border:1px solid var(--c91-line);
+  border-radius:var(--c91-radius);overflow:hidden;
+  transition:transform .22s,border-color .22s;
+  display:flex;flex-direction:column;
+}
+.c91-card:hover{transform:translateY(-3px);border-color:#3a465c}
+.c91-card-cover{aspect-ratio:16/9;overflow:hidden}
+.c91-card-cover img{width:100%;height:100%;object-fit:cover}
+.c91-card-body{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column}
+.c91-card-body h3{font-size:17px;line-height:1.42;margin-bottom:9px}
+.c91-card-body>p{font-size:13.5px;color:var(--c91-dim);margin-bottom:13px;flex:1}
+.c91-card-tag{
+  display:inline-block;font-size:11.5px;color:var(--c91-accent2);
+  background:rgba(55,224,176,.1);border:1px solid rgba(55,224,176,.28);
+  padding:2px 9px;border-radius:5px;margin-bottom:10px;align-self:flex-start;
+}
+@media(max-width:720px){.c91-cards2{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- 关键词解析长文 ---------- */
+.c91-essay{display:grid;grid-template-columns:.72fr 1.28fr;gap:44px;align-items:start}
+.c91-essay aside{
+  background:var(--c91-panel);border:1px solid var(--c91-line);
+  border-radius:var(--c91-radius);padding:26px 24px;position:sticky;top:130px;
+}
+.c91-essay aside h3{font-size:16px;margin-bottom:14px;color:var(--c91-accent)}
+.c91-essay aside ul li{
+  font-size:13.5px;color:var(--c91-dim);padding:9px 0;
+  border-bottom:1px dashed var(--c91-line);display:flex;gap:9px;
+}
+.c91-essay aside ul li:last-child{border-bottom:none}
+.c91-essay aside ul li b{color:var(--c91-accent2);font-weight:700;flex:none}
+.c91-essay main h3{font-size:19px;margin:26px 0 12px;padding-left:13px;border-left:3px solid var(--c91-accent)}
+.c91-essay main h3:first-child{margin-top:0}
+.c91-essay main p{font-size:14.5px;color:#b9c3d2;margin-bottom:14px;text-align:justify}
+.c91-quote{
+  margin:20px 0;padding:16px 20px;border-radius:10px;
+  background:rgba(55,224,176,.06);border-left:3px solid var(--c91-accent2);
+  font-size:14px;color:#b6e8d8;
+}
+@media(max-width:900px){.c91-essay{grid-template-columns:minmax(0,1fr)}.c91-essay aside{position:static}}
+
+/* ---------- 专题 ---------- */
+.c91-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.c91-topic{
+  background:linear-gradient(160deg,var(--c91-panel2),var(--c91-panel));
+  border:1px solid var(--c91-line);border-radius:var(--c91-radius);
+  padding:22px 22px 18px;transition:border-color .22s,transform .22s;
+}
+.c91-topic:hover{border-color:var(--c91-accent);transform:translateY(-3px)}
+.c91-topic-status{
+  display:inline-block;font-size:11px;letter-spacing:.08em;
+  padding:2px 9px;border-radius:5px;margin-bottom:12px;
+  background:rgba(255,92,57,.14);color:#ff9a80;
+}
+.c91-topic-status.c91-done{background:rgba(55,224,176,.12);color:var(--c91-accent2)}
+.c91-topic h3{font-size:17px;line-height:1.4;margin-bottom:9px}
+.c91-topic>p{font-size:13px;color:var(--c91-dim);margin-bottom:14px}
+.c91-topic ol li{
+  font-size:13px;color:#a4b0c4;padding:7px 0 7px 20px;
+  position:relative;border-top:1px dashed var(--c91-line);
+}
+.c91-topic ol li::before{
+  content:"";position:absolute;left:2px;top:15px;
+  width:5px;height:5px;border-radius:50%;background:var(--c91-accent);
+}
+@media(max-width:900px){.c91-topics{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- 作者：双列简介 ---------- */
+.c91-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.c91-author{
+  display:flex;gap:16px;background:var(--c91-panel);border:1px solid var(--c91-line);
+  border-radius:var(--c91-radius);padding:20px;transition:border-color .22s;
+}
+.c91-author:hover{border-color:#3a465c}
+.c91-avatar{
+  width:54px;height:54px;border-radius:50%;flex:none;
+  display:grid;place-items:center;font-weight:800;font-size:19px;color:#fff;
+  letter-spacing:.02em;
+}
+.c91-author-info{min-width:0}
+.c91-author-info h3{font-size:16px;margin-bottom:3px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.c91-author-info h3 span{font-size:10.5px;font-weight:600;color:var(--c91-accent2);border:1px solid rgba(55,224,176,.3);border-radius:4px;padding:1px 6px}
+.c91-author-field{font-size:12px;color:var(--c91-accent);margin-bottom:7px;letter-spacing:.03em}
+.c91-author-info p{font-size:12.8px;color:var(--c91-dim);line-height:1.65;margin-bottom:8px}
+.c91-author-nums{display:flex;gap:16px;font-size:12px;color:#7f8ca1}
+.c91-author-nums b{color:var(--c91-text);font-weight:700}
+@media(max-width:760px){.c91-authors{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- 评论区：双列短评 ---------- */
+.c91-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.c91-comment{
+  background:var(--c91-panel);border:1px solid var(--c91-line);
+  border-radius:var(--c91-radius);padding:18px 20px;
+}
+.c91-comment-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.c91-comment-top .c91-avatar{width:34px;height:34px;font-size:13.5px}
+.c91-comment-name{font-size:13.5px;font-weight:700}
+.c91-comment-time{font-size:11.5px;color:#6e7a90;margin-left:auto;flex:none}
+.c91-comment p{font-size:13.5px;color:#b6c1d2;line-height:1.7}
+.c91-comment-foot{display:flex;gap:14px;margin-top:11px;font-size:12px;color:#7f8ca1}
+@media(max-width:760px){.c91-comments{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- 榜单 ---------- */
+.c91-rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.c91-rank-col{background:var(--c91-panel);border:1px solid var(--c91-line);border-radius:var(--c91-radius);padding:20px}
+.c91-rank-col h3{font-size:15px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--c91-line);display:flex;gap:7px;align-items:center}
+.c91-rank-col h3 i{width:4px;height:14px;border-radius:2px;background:var(--c91-accent);display:block}
+.c91-rank-col li{display:flex;gap:11px;align-items:center;padding:9px 0;font-size:13.2px;color:#b5c0d1}
+.c91-rank-no{width:19px;font-weight:800;color:#4a5670;flex:none;font-size:12.5px}
+.c91-rank-col li:nth-child(1) .c91-rank-no{color:var(--c91-accent)}
+.c91-rank-col li:nth-child(2) .c91-rank-no{color:var(--c91-amber)}
+.c91-rank-col li:nth-child(3) .c91-rank-no{color:var(--c91-accent2)}
+.c91-rank-col li span.c91-rank-val{margin-left:auto;font-size:11.5px;color:#6e7a90;flex:none}
+@media(max-width:880px){.c91-rank-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- 企业动态 + 合作 ---------- */
+.c91-two-col{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:start}
+.c91-news li{
+  display:grid;grid-template-columns:88px 1fr;gap:16px;
+  padding:15px 0;border-bottom:1px dashed var(--c91-line);
+}
+.c91-news li:last-child{border-bottom:none}
+.c91-news time{font-size:12px;color:var(--c91-accent);letter-spacing:.03em;font-weight:600}
+.c91-news h3{font-size:14.8px;margin-bottom:4px}
+.c91-news p{font-size:12.8px;color:var(--c91-dim)}
+.c91-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.c91-partner{
+  border:1px solid var(--c91-line);border-radius:10px;
+  padding:15px 10px;text-align:center;font-size:13px;color:#a7b2c5;
+  background:var(--c91-panel);transition:.2s;
+}
+.c91-partner:hover{border-color:var(--c91-accent2);color:var(--c91-accent2)}
+@media(max-width:820px){.c91-two-col{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- FAQ ---------- */
+.c91-faq{max-width:880px;margin:0 auto}
+.c91-faq details{
+  background:var(--c91-panel);border:1px solid var(--c91-line);
+  border-radius:11px;margin-bottom:11px;padding:0 20px;transition:border-color .2s;
+}
+.c91-faq details[open]{border-color:var(--c91-accent)}
+.c91-faq summary{
+  cursor:pointer;list-style:none;font-size:14.8px;font-weight:600;
+  padding:16px 0;position:relative;padding-right:30px;
+}
+.c91-faq summary::-webkit-details-marker{display:none}
+.c91-faq summary::after{
+  content:"+";position:absolute;right:0;top:14px;font-size:20px;
+  color:var(--c91-accent);font-weight:400;line-height:1;transition:transform .2s;
+}
+.c91-faq details[open] summary::after{transform:rotate(45deg)}
+.c91-faq details p{font-size:13.5px;color:var(--c91-dim);padding:0 0 17px;line-height:1.75}
+
+/* ---------- 投稿 CTA ---------- */
+.c91-cta{
+  background:linear-gradient(110deg,#20140f,#161c26 55%,#122a25);
+  border:1px solid var(--c91-line);border-radius:18px;
+  padding:40px 38px;display:flex;align-items:center;justify-content:space-between;
+  gap:26px;flex-wrap:wrap;
+}
+.c91-cta h2{font-size:clamp(21px,2.8vw,27px);margin-bottom:9px}
+.c91-cta p{font-size:14px;color:var(--c91-dim);max-width:560px}
+.c91-cta .c91-actions{gap:12px}
+
+/* ---------- 页脚 ---------- */
+.c91-footer{background:#0b0e13;border-top:1px solid var(--c91-line);padding:52px 0 26px;margin-top:20px}
+.c91-foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+.c91-foot-brand .c91-logo{margin-bottom:14px}
+.c91-foot-brand p{font-size:13px;color:var(--c91-dim);max-width:320px;margin-bottom:14px}
+.c91-foot-social{display:flex;gap:9px}
+.c91-foot-social button{
+  width:34px;height:34px;border-radius:9px;border:1px solid var(--c91-line);
+  display:grid;place-items:center;font-size:11.5px;color:var(--c91-dim);transition:.2s;
+}
+.c91-foot-social button:hover{border-color:var(--c91-accent);color:var(--c91-accent)}
+.c91-foot-col h4{font-size:13.5px;margin-bottom:13px;letter-spacing:.05em}
+.c91-foot-col li{font-size:12.8px;color:var(--c91-dim);padding:5px 0;transition:color .2s}
+.c91-foot-col li:hover{color:var(--c91-accent)}
+.c91-foot-bottom{
+  border-top:1px solid var(--c91-line);padding-top:20px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12px;color:#6b7689;
+}
+@media(max-width:820px){.c91-foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ---------- Toast / 弹层 ---------- */
+.c91-toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,26px);
+  background:#232c3b;border:1px solid var(--c91-line);
+  color:#fff;font-size:13.5px;padding:11px 22px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:.28s;z-index:200;
+  box-shadow:0 14px 40px rgba(0,0,0,.5);
+}
+.c91-toast.c91-show{opacity:1;transform:translate(-50%,0)}
+.c91-modal{
+  position:fixed;inset:0;z-index:180;display:none;
+  align-items:center;justify-content:center;padding:22px;
+  background:rgba(5,7,10,.76);backdrop-filter:blur(4px);
+}
+.c91-modal.c91-show{display:flex}
+.c91-modal-box{
+  background:var(--c91-panel);border:1px solid var(--c91-line);
+  border-radius:16px;max-width:460px;width:100%;padding:26px 26px 22px;
+}
+.c91-modal-box h3{font-size:18px;margin-bottom:12px}
+.c91-modal-box p{font-size:13.5px;color:var(--c91-dim);margin-bottom:18px;line-height:1.7}
+.c91-modal-box textarea,.c91-modal-box input{
+  width:100%;background:var(--c91-bg);border:1px solid var(--c91-line);
+  border-radius:9px;color:var(--c91-text);padding:11px 13px;font-size:13.5px;
+  font-family:inherit;outline:none;margin-bottom:12px;resize:vertical;
+}
+.c91-modal-box textarea:focus,.c91-modal-box input:focus{border-color:var(--c91-accent)}
+.c91-modal-actions{display:flex;gap:10px;justify-content:flex-end}
+
+.c91-top-btn{
+  position:fixed;right:24px;bottom:26px;z-index:95;
+  width:44px;height:44px;border-radius:12px;
+  background:var(--c91-panel2);border:1px solid var(--c91-line);
+  display:grid;place-items:center;opacity:0;pointer-events:none;
+  transition:opacity .25s,transform .25s;transform:translateY(8px);
+}
+.c91-top-btn.c91-visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+.c91-top-btn:hover{border-color:var(--c91-accent);color:var(--c91-accent)}
+.c91-top-btn svg{width:17px;height:17px}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== S1 吸顶：公告条 + 页头 ===== -->
+<div class="c91-sticky-top">
+  <div class="c91-announce">
+    <div class="c91-announce-inner">
+      <span class="c91-announce-tag">官方发布</span>
+      <div class="c91-announce-track">
+        <span>「光影四季」2026 影像挑战赛报名开启 · 12 月 1 日首映《城市呼吸》第四季 · 新创作者入驻通道已上线 · 高清正版片库本周新增 46 部作品 · 官方征集「我的一平米」主题短片</span>
+      </div>
+    </div>
+  </div>
+  <header class="c91-header">
+    <a href="#c91-hero" class="c91-logo" aria-label="91传媒照片首页">
+      <span class="c91-logo-mark">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="#fff"/></svg>
+      </span>
+      <span class="c91-logo-txt">
+        <strong>91传媒照片</strong>
+        <small>Video &amp; Image Studio</small>
+      </span>
+    </a>
+    <nav class="c91-nav" id="c91Nav" aria-label="主导航">
+      <a href="#c91-focus">焦点内容</a>
+      <a href="#c91-videos">精品视频</a>
+      <a href="#c91-essay">关键词解析</a>
+      <a href="#c91-topics">专题企划</a>
+      <a href="#c91-authors">创作者</a>
+      <a href="#c91-comments">口碑评价</a>
+      <a href="#c91-news">企业动态</a>
+      <a href="#c91-faq">帮助中心</a>
+    </nav>
+    <div class="c91-head-tools">
+      <div class="c91-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="c91SearchInput" placeholder="搜索影像 · 创作者" aria-label="站内搜索">
+      </div>
+      <button class="c91-btn c91-btn-solid" id="c91SubmitBtnTop" type="button">投稿</button>
+      <button class="c91-burger" id="c91Burger" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="c91Nav"><span></span></button>
+    </div>
+  </header>
+  <div class="c91-search-feedback" id="c91SearchFeedback" role="status" aria-live="polite"></div>
+</div>
+
+<!-- ===== S2 品牌首屏：全幅主视觉背景 + 浮动文字 ===== -->
+<section class="c91-hero" id="c91-hero">
+  <img class="c91-hero-bg" alt="91传媒照片官方主视觉：暮色中的城市天际线与摄影创作者剪影" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%230b1424'/%3E%3Cstop offset='0.55' stop-color='%23263349'/%3E%3Cstop offset='1' stop-color='%23c2552f'/%3E%3C/linearGradient%3E%3ClinearGradient id='tower' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23141c2c'/%3E%3Cstop offset='1' stop-color='%230a0f18'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1600' height='900' fill='url(%23sky)'/%3E%3Ccircle cx='1180' cy='300' r='86' fill='%23ffb15c' opacity='0.55'/%3E%3Ccircle cx='1180' cy='300' r='42' fill='%23ffe0a8' opacity='0.85'/%3E%3Cg fill='url(%23tower)'%3E%3Crect x='60' y='470' width='120' height='430'/%3E%3Crect x='200' y='380' width='96' height='520'/%3E%3Crect x='316' y='520' width='150' height='380'/%3E%3Crect x='486' y='300' width='104' height='600'/%3E%3Crect x='610' y='440' width='130' height='460'/%3E%3Crect x='760' y='540' width='98' height='360'/%3E%3Crect x='878' y='390' width='140' height='510'/%3E%3Crect x='1038' y='500' width='112' height='400'/%3E%3Crect x='1170' y='360' width='90' height='540'/%3E%3Crect x='1280' y='470' width='130' height='430'/%3E%3Crect x='1430' y='410' width='110' height='490'/%3E%3C/g%3E%3Cg fill='%23ffc247' opacity='0.5'%3E%3Crect x='220' y='410' width='10' height='10'/%3E%3Crect x='250' y='450' width='10' height='10'/%3E%3Crect x='504' y='340' width='10' height='10'/%3E%3Crect x='540' y='400' width='10' height='10'/%3E%3Crect x='900' y='430' width='10' height='10'/%3E%3Crect x='940' y='490' width='10' height='10'/%3E%3Crect x='1190' y='400' width='10' height='10'/%3E%3Crect x='1310' y='510' width='10' height='10'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='700' cy='740' r='26' fill='%230d1119'/%3E%3Crect x='676' y='766' width='48' height='120' rx='16' fill='%230d1119'/%3E%3Crect x='700' y='700' width='86' height='60' rx='8' fill='%23161d29'/%3E%3Ccircle cx='746' cy='730' r='15' fill='none' stroke='%23ff5c39' stroke-width='5'/%3E%3C/g%3E%3Crect x='0' y='852' width='1600' height='48' fill='%23080b11'/%3E%3C/svg%3E">
+  <div class="c91-hero-shade"></div>
+  <div class="c91-container c91-hero-inner">
+    <span class="c91-hero-badge"><i></i>品牌官方网站 · 高清正版影像内容生态</span>
+    <h1>91传媒照片</h1>
+    <p class="c91-hero-sub">用一帧画面，留下一个时代的呼吸。这里是影像记录者与企业共同运营的官方视频门户。</p>
+    <p class="c91-hero-desc">
+      作为深耕影像与视觉叙事垂直领域的品牌平台，91传媒照片官方网站致力于为原创创作者与企业机构搭建高品质内容生态。我们持续运营纪录片、短片、幕后花絮与影像教程，坚持正版授权与高清品质，让每一段真实影像都被值得信赖地看见。
+    </p>
+    <div class="c91-hero-stats">
+      <div class="c91-hero-stat"><strong data-c91-count="3860">0</strong><small>原创影像作品</small></div>
+      <div class="c91-hero-stat"><strong data-c91-count="512">0</strong><small>签约创作者</small></div>
+      <div class="c91-hero-stat"><strong data-c91-count="94">0</strong><span>%</span><small>用户口碑推荐</small></div>
+    </div>
+    <div class="c91-hero-actions">
+      <a href="#c91-videos" class="c91-btn c91-btn-solid">进入精品视频</a>
+      <a href="#c91-topics" class="c91-btn c91-btn-ghost">查看专题企划</a>
+      <button class="c91-btn c91-btn-ghost" type="button" id="c91HeroSubmit">投稿报名</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S3 焦点内容：一处重点大图 + 文字列表 ===== -->
+<section class="c91-sec" id="c91-focus">
+  <div class="c91-container">
+    <div class="c91-sec-head">
+      <div>
+        <div class="c91-sec-kicker">Focus · 焦点内容</div>
+        <h2>本周焦点影像：91传媒照片的重点推荐</h2>
+        <p>由官方编辑部与创作者共同评选，聚焦具有影像价值与真实力量的精品内容。</p>
+      </div>
+      <div class="c91-tagsline">
+        <span class="c91-chip c91-active">全部</span>
+        <span class="c91-chip">纪录片</span>
+        <span class="c91-chip">城市影像</span>
+        <span class="c91-chip">人物访谈</span>
+      </div>
+    </div>
+
+    <div class="c91-focus-grid">
+      <article class="c91-focus-main">
+        <div class="c91-focus-cover">
+          <img alt="纪录片《城市呼吸》第四季封面：清晨薄雾中的老城区街巷与行人" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='m1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232f3f57'/%3E%3Cstop offset='1' stop-color='%23131a26'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23m1)'/%3E%3Cg opacity='0.35'%3E%3Ccircle cx='640' cy='90' r='120' fill='%23ffc247'/%3E%3C/g%3E%3Cg fill='%23d9e2ef' opacity='0.14'%3E%3Crect x='40' y='250' width='180' height='200'/%3E%3Crect x='240' y='200' width='130' height='250'/%3E%3Crect x='390' y='270' width='160' height='180'/%3E%3Crect x='570' y='220' width='190' height='230'/%3E%3C/g%3E%3Cpath d='M0 400 L800 400' stroke='%23ff5c39' stroke-width='2' opacity='0.5'/%3E%3Cg fill='%230c1119'%3E%3Ccircle cx='330' cy='330' r='14'/%3E%3Crect x='316' y='344' width='28' height='70' rx='10'/%3E%3Ccircle cx='470' cy='348' r='12'/%3E%3Crect x='458' y='360' width='24' height='54' rx='9'/%3E%3C/g%3E%3Cg stroke='%23ffc247' stroke-width='3' opacity='0.6'%3E%3Cpath d='M60 80 Q160 40 260 90' fill='none'/%3E%3Cpath d='M420 60 Q520 20 620 70' fill='none'/%3E%3C/g%3E%3C/svg%3E">
+          <span class="c91-play"><i></i>24:16</span>
+        </div>
+        <div class="c91-focus-body">
+          <h3>《城市呼吸》第四季 · 第一集：清晨五点的街巷</h3>
+          <p>跟拍三位早班人与一条老街的苏醒，用长镜头记录城市最安静也最真实的时刻。91传媒照片官方团队历时九个月完成拍摄。</p>
+          <div class="c91-meta">
+            <span>导演 · 周砚白</span>
+            <span>12.4 万播放</span>
+            <span>2026/11/18</span>
+          </div>
+          <div class="c91-actions">
+            <button class="c91-act" data-c91-like type="button" aria-pressed="false">♡ 点赞 <b>2841</b></button>
+            <button class="c91-act" data-c91-save type="button" aria-pressed="false">☆ 收藏</button>
+            <button class="c91-act" data-c91-copy type="button">复制链接</button>
+          </div>
+        </div>
+      </article>
+
+      <ul>
+        <li class="c91-list-item">
+          <span class="c91-list-no">01</span>
+          <div>
+            <h3>访谈 · 我拍了十年菜市场，才学会慢下来</h3>
+            <p>与影像创作者林小满对谈：相机如何成为一种与人相处的方式。</p>
+            <div class="c91-meta"><span>人物访谈</span><span>7.8 万播放</span></div>
+          </div>
+        </li>
+        <li class="c91-list-item">
+          <span class="c91-list-no">02</span>
+          <div>
+            <h3>幕后 · 一支纪录片短片的十二个夜晚</h3>
+            <p>从勘景到调色，完整拆解小成本影像团队的工作流程与取舍。</p>
+            <div class="c91-meta"><span>创作幕后</span><span>5.2 万播放</span></div>
+          </div>
+        </li>
+        <li class="c91-list-item">
+          <span class="c91-list-no">03</span>
+          <div>
+            <h3>教程 · 用自然光拍出有呼吸感的人物特写</h3>
+            <p>三组对比案例，讲解逆光、侧光与柔光在纪实拍摄中的差别。</p>
+            <div class="c91-meta"><span>教程干货</span><span>9.1 万播放</span></div>
+          </div>
+        </li>
+        <li class="c91-list-item">
+          <span class="c91-list-no">04</span>
+          <div>
+            <h3>在地 · 一座旧电影院的最后七十二小时</h3>
+            <p>停业前的最后三场放映，观众、放映员与票根留下的影像档案。</p>
+            <div class="c91-meta"><span>城市探索</span><span>6.6 万播放</span></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S3 视频内容：两列图文卡片 ===== -->
+<section class="c91-sec c91-sec-alt" id="c91-videos">
+  <div class="c91-container">
+    <div class="c91-sec-head">
+      <div>
+        <div class="c91-sec-kicker">Videos · 精品视频</div>
+        <h2>精品视频精选：高清正版的原创影像</h2>
+        <p>91传媒照片持续运营的原创片单，每一部均经过官方审核与高清修复，适合收藏与反复观看。</p>
+      </div>
+    </div>
+
+    <div class="c91-cards2">
+      <article class="c91-card">
+        <div class="c91-card-cover">
+          <img alt="短片《夜市之后》封面：蒸汽升腾的夜宵摊与暖黄灯光" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23241711'/%3E%3Ccircle cx='200' cy='140' r='90' fill='%23ff8b3d' opacity='0.35'/%3E%3Ccircle cx='600' cy='110' r='70' fill='%23ffc247' opacity='0.3'/%3E%3Cg stroke='%23ffb15c' stroke-width='4' fill='none' opacity='0.65'%3E%3Cpath d='M250 300 q30 -60 0 -120'/%3E%3Cpath d='M330 300 q30 -70 0 -140'/%3E%3Cpath d='M410 300 q30 -55 0 -110'/%3E%3C/g%3E%3Cg fill='%231a0f0b'%3E%3Crect x='100' y='300' width='600' height='150' rx='14'/%3E%3Crect x='150' y='250' width='150' height='60' rx='8'/%3E%3Crect x='500' y='250' width='150' height='60' rx='8'/%3E%3C/g%3E%3Cg fill='%23ffc247' opacity='0.8'%3E%3Ccircle cx='210' cy='235' r='8'/%3E%3Ccircle cx='560' cy='235' r='8'/%3E%3C/g%3E%3C/svg%3E">
+        </div>
+        <div class="c91-card-body">
+          <span class="c91-card-tag">日常记录</span>
+          <h3>《夜市之后》：一锅汤底熬过整条街的深夜</h3>
+          <p>凌晨两点收摊之后，摊主们才开始吃自己的那顿饭。这部短片把镜头对准夜市散场后的四十分钟，记录城市夜归人的温暖日常。</p>
+          <div class="c91-meta"><span>作者 · 陈粥粥</span><span>8.9 万播放</span><span>收藏 1.2 万</span></div>
+          <div class="c91-actions">
+            <button class="c91-act" data-c91-like type="button" aria-pressed="false">♡ 点赞 <b>1932</b></button>
+            <button class="c91-act" data-c91-save type="button" aria-pressed="false">☆ 收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="c91-card">
+        <div class="c91-card-cover">
+          <img alt="教程视频《三分法之外》封面：取景框网格与山脊线构图示意" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%2312222c'/%3E%3Cpath d='M0 340 L180 200 L320 300 L470 160 L640 280 L800 190 L800 450 L0 450 Z' fill='%231a3340'/%3E%3Cpath d='M0 390 L200 300 L360 370 L540 270 L720 350 L800 310 L800 450 L0 450 Z' fill='%230f1f2a'/%3E%3Cg stroke='%2337e0b0' stroke-width='2' opacity='0.5'%3E%3Cpath d='M266 0 V450'/%3E%3Cpath d='M533 0 V450'/%3E%3Cpath d='M0 150 H800'/%3E%3Cpath d='M0 300 H800'/%3E%3C/g%3E%3Ccircle cx='533' cy='150' r='34' fill='none' stroke='%23ff5c39' stroke-width='4'/%3E%3C/svg%3E">
+        </div>
+        <div class="c91-card-body">
+          <span class="c91-card-tag">教程干货</span>
+          <h3>《三分法之外》：让画面真正有叙事的六种构图</h3>
+          <p>不讲玄学只讲取舍。用同一场景的六种机位对照，说明为什么有的画面能让人停留，而有的只是好看。</p>
+          <div class="c91-meta"><span>作者 · 徐一帧</span><span>13.7 万播放</span><span>收藏 2.6 万</span></div>
+          <div class="c91-actions">
+            <button class="c91-act" data-c91-like type="button" aria-pressed="false">♡ 点赞 <b>3520</b></button>
+            <button class="c91-act" data-c91-save type="button" aria-pressed="false">☆ 收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="c91-card">
+        <div class="c91-card-cover">
+          <img alt="人物访谈《她说她拍了二十年》封面：两把椅子与一束侧光" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23201a2c'/%3E%3Cpath d='M0 0 L420 0 L200 450 L0 450 Z' fill='%23ffc247' opacity='0.12'/%3E%3Cg fill='%23322544'%3E%3Crect x='220' y='260' width='90' height='16' rx='6'/%3E%3Crect x='240' y='276' width='8' height='110'/%3E%3Crect x='282' y='276' width='8' height='110'/%3E%3Crect x='226' y='180' width='80' height='84' rx='10'/%3E%3Crect x='490' y='260' width='90' height='16' rx='6'/%3E%3Crect x='510' y='276' width='8' height='110'/%3E%3Crect x='552' y='276' width='8' height='110'/%3E%3Crect x='496' y='180' width='80' height='84' rx='10'/%3E%3C/g%3E%3Ccircle cx='400' cy='120' r='60' fill='%23ffc247' opacity='0.22'/%3E%3C/svg%3E">
+        </div>
+        <div class="c91-card-body">
+          <span class="c91-card-tag">人物访谈</span>
+          <h3>《她说她拍了二十年》：影像如何留住一个家庭的年轮</h3>
+          <p>一位家庭影像记录者与她的三台旧相机。访谈中她谈到为什么坚持每年同一天、同一角度拍一张全家福。</p>
+          <div class="c91-meta"><span>作者 · 苏霁</span><span>6.4 万播放</span><span>收藏 8900</span></div>
+          <div class="c91-actions">
+            <button class="c91-act" data-c91-like type="button" aria-pressed="false">♡ 点赞 <b>1467</b></button>
+            <button class="c91-act" data-c91-save type="button" aria-pressed="false">☆ 收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="c91-card">
+        <div class="c91-card-cover">
+          <img alt="旅行影像《沿着海岸线走一百公里》封面：礁石海岸与低飞海鸟" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='sea' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%232a5f72'/%3E%3Cstop offset='1' stop-color='%23143643'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='%23cddbe4'/%3E%3Crect y='230' width='800' height='220' fill='url(%23sea)'/%3E%3Cpath d='M0 230 L120 200 L240 235 L380 205 L520 240 L660 210 L800 236 L800 260 L0 260 Z' fill='%23e8eff4' opacity='0.55'/%3E%3Cpath d='M0 380 L150 340 L300 390 L470 330 L640 385 L800 350 L800 450 L0 450 Z' fill='%23101e28'/%3E%3Cg stroke='%23132b36' stroke-width='4' fill='none'%3E%3Cpath d='M560 130 q22 -18 44 0 q22 -18 44 0'/%3E%3Cpath d='M620 90 q16 -13 32 0 q16 -13 32 0'/%3E%3C/g%3E%3C/svg%3E">
+        </div>
+        <div class="c91-card-body">
+          <span class="c91-card-tag">旅行见闻</span>
+          <h3>《沿着海岸线走一百公里》：用七天换一段没有旁白的影像</h3>
+          <p>没有解说词、没有配乐高潮，只有潮汐、风声与脚步。这是一次关于克制表达的影像实验。</p>
+          <div class="c91-meta"><span>作者 · 沈野</span><span>5.1 万播放</span><span>收藏 7300</span></div>
+          <div class="c91-actions">
+            <button class="c91-act" data-c91-like type="button" aria-pressed="false">♡ 点赞 <b>1120</b></button>
+            <button class="c91-act" data-c91-save type="button" aria-pressed="false">☆ 收藏</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <ul style="margin-top:30px">
+      <li class="c91-list-item">
+        <span class="c91-list-no">05</span>
+        <div>
+          <h3>《一平米书房》：在四平方米里拍出一整年的读者来信</h3>
+          <p>书桌、台灯与一摞手写信，记录小空间里的精神纵深。</p>
+          <div class="c91-meta"><span>生活方式</span><span>作者 · 何遇</span><span>4.3 万播放</span><span>收藏 5100</span></div>
+          <div class="c91-actions">
+            <button class="c91-act" data-c91-like type="button" aria-pressed="false">♡ 点赞 <b>860</b></button>
+            <button class="c91-act" data-c91-copy type="button">复制链接</button>
+          </div>
+        </div>
+      </li>
+      <li class="c91-list-item">
+        <span class="c91-list-no">06</span>
+        <div>
+          <h3>《木工房的午后》：一把椅子从原木到成型的二十七天</h3>
+          <p>手作影像，记录工具声、木屑与反复推敲的结构。</p>
+          <div class="c91-meta"><span>手作 DIY</span><span>作者 · 陆榫</span><span>3.8 万播放</span><span>收藏 4600</span></div>
+          <div class="c91-actions">
+            <button class="c91-act" data-c91-like type="button" aria-pressed="false">♡ 点赞 <b>742</b></button>
+            <button class="c91-act" data-c91-copy type="button">复制链接</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 关键词解析长文（不少于 800 字） ===== -->
+<section class="c91-sec" id="c91-essay">
+  <div class="c91-container">
+    <div class="c91-sec-head">
+      <div>
+        <div class="c91-sec-kicker">Deep Dive · 关键词解析</div>
+        <h2>关于「91传媒照片」：一个影像品牌的内容逻辑</h2>
+        <p>为什么一个视频门户要花力气谈照片？因为我们相信影像是连续的，而每一帧都值得被认真对待。</p>
+      </div>
+    </div>
+
+    <div class="c91-essay">
+      <aside>
+        <h3>本页关键词索引</h3>
+        <ul>
+          <li><b>01</b>品牌定位与影像主张</li>
+          <li><b>02</b>内容生态的三层结构</li>
+          <li><b>03</b>创作者与社区运营</li>
+          <li><b>04</b>品质、正版与持续运营</li>
+          <li><b>05</b>面向未来的影像计划</li>
+        </ul>
+      </aside>
+
+      <main>
+        <h3>一、从一张照片到一段影像：品牌定位的来处</h3>
+        <p>「91传媒照片」这个名字里同时包含了照片与传媒两个维度，它并非简单的拼合，而是品牌长期实践的结果。早期团队以静态影像记录城市生活，拍摄街头、市场、老楼与夜班工人；随着记录需求变多，静态画面无法承载时间流动带来的信息，团队开始用连续镜头讲述同一群人一天之内的变化。于是照片成为影像的基础训练——学习如何观察光、如何等待一个表情、如何在混乱现场里找到叙事重心。这种从静到动的路径，让91传媒照片的影像作品带有明显的纪实底色：不过度调度、不强行抒情，尽量把解释权交还给画面本身。</p>
+        <p>今天，91传媒照片官方网站既是企业品牌对外发布的窗口，也是创作者集中展示的社区。我们把它定义为一个「影像记录与视觉创作的视频平台」：企业机构可以在这里发布品牌故事与官方动态，独立创作者可以上传原创短片、参与专题挑战、获得高清正版素材支持。平台不追求内容数量的膨胀，而更看重每一部上线作品是否经得起重复观看。这也是我们坚持在首页设置焦点影像与深度解析板块的原因：影像品牌的说服力，最终来自作品质量，而不是宣传口号。</p>
+
+        <h3>二、内容生态的三层结构：精选、专题与长尾</h3>
+        <p>在内容组织上，91传媒照片采用三层结构。第一层是精选与焦点内容，由官方编辑部从每周上传的作品中挑出三到五部，围绕叙事完整度、影像质感与真实性进行讨论，这类内容通常会在首页获得重点展示位置，并配以创作者访谈或幕后解析。第二层是专题企划，例如「城市呼吸」「我的一平米」「光影四季」等长期栏目，每个专题有明确的主题边界与更新节奏，创作者围绕同一命题提交作品，平台负责组织评审与展映。第三层是长尾内容，包括教程干货、行业观察、创作幕后与实用技巧，它们不追求爆款，但构成了平台最稳定的知识沉淀。</p>
+        <p>三层结构之间并非彼此隔离。一部专题作品播出后，往往会衍生出幕后花絮与教程拆解；一条教程视频的评论区，又常常成为新专题的选题来源。平台运营团队会定期把评论区高频出现的问题整理成选题清单，反馈给签约创作者。这种由内容到社区、再由社区回到内容的循环，是91传媒照片内容生态得以持续运转的核心机制。</p>
+
+        <h3>三、创作者与社区：让真实的人被看见</h3>
+        <p>影像社区最怕两件事：一是只看流量不看作品，二是只看作品不看人。91传媒照片在创作者运营上做了两件相对笨拙但有效的事。其一，为每位签约创作者建立完整的档案页，包含擅长领域、作品数量、粉丝规模与一段百字左右的自我介绍，档案不是营销包装，而是让观众知道镜头后面站着一个具体的人。其二，定期组织线上分享与线下放映，创作者需要在放映后回答观众提问，问题不限技术，也可以问「你当时为什么选择拍她」。我们相信，一个愿意解释自己选择的创作者，才可能持续产出值得信赖的作品。</p>
+        <p>社区的另一半是观众。平台设有评价、举报与反馈入口，鼓励具体、有信息量的评论，反对无差别攻击与刷量行为。编辑团队会对每条负面反馈进行分类处理，涉及画质、字幕、授权等问题的，48 小时内响应。这些工作不产生漂亮的播放数据，却决定了社区能不能长期健康地生长。</p>
+
+        <h3>四、品质、正版与持续运营：一个品牌的基本盘</h3>
+        <p>在品质层面，91传媒照片对所有上线作品执行统一的清晰度与音频标准，重点影片提供高清版本与多语言字幕，部分历史影像经过修复后重新发布。在版权层面，平台坚持正版授权，创作者上传作品需确认为原创或已获得合法授权，企业合作内容需提供素材来源说明。这一流程会增加审核成本，但它是品牌可信度的基础，也是我们敢于在页面上使用「值得信赖」「用户首选」这类表述的前提。</p>
+        <p>持续运营体现在可预期的更新节奏上：每周三更新焦点影像，每月一号发布专题进度，每季度公布一次内容报告，向社区同步作品数量、评审标准调整与下阶段计划。我们不把「持续运营」当成一句口号，而是拆解为可核对的时间节点。正是这些看起来琐碎的制度安排，让91传媒照片从一个作品集页面成长为一个有生命力的品牌平台，也让越来越多机构愿意把影像项目交给这支团队。</p>
+        <div class="c91-quote">「影像的意义不在于被多少人看到，而在于被看到的人是否愿意停下来。」这是91传媒照片编辑部写在选题手册扉页的一句话，也是我们判断一部作品是否值得上首页的第一标准。</div>
+      </main>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S4 专题企划 ===== -->
+<section class="c91-sec c91-sec-alt" id="c91-topics">
+  <div class="c91-container">
+    <div class="c91-sec-head">
+      <div>
+        <div class="c91-sec-kicker">Projects · 专题企划</div>
+        <h2>持续更新的专题企划：影像如何参与公共记忆</h2>
+        <p>三个正在推进的长期栏目，面向所有创作者开放投稿与报名。</p>
+      </div>
+    </div>
+
+    <div class="c91-topics">
+      <article class="c91-topic">
+        <span class="c91-topic-status">更新中 · 第 4 季</span>
+        <h3>城市呼吸</h3>
+        <p>以城市的一天为时间轴，记录那些容易被忽略的日常瞬间。本季聚焦清晨与深夜两个时段。</p>
+        <ol>
+          <li>第一集：清晨五点的街巷（已上线）</li>
+          <li>第二集：午后三点的工地（制作中）</li>
+          <li>第三集：深夜十一点的末班车（待首映）</li>
+        </ol>
+      </article>
+
+      <article class="c91-topic">
+        <span class="c91-topic-status c91-done">已完结 · 共 9 集</span>
+        <h3>我的一平米</h3>
+        <p>在尽可能小的物理空间里，拍出尽可能大的精神纵深。九位创作者，九种生活方式。</p>
+        <ol>
+          <li>一平米书房：四平方米里的读者来信</li>
+          <li>一平米厨房：一个人也要认真吃饭</li>
+          <li>一平米阳台：在晾衣绳之间种花</li>
+        </ol>
+      </article>
+
+      <article class="c91-topic">
+        <span class="c91-topic-status">征集中 · 12 月 1 日截止</span>
+        <h3>光影四季</h3>
+        <p>2026 年度影像挑战赛，以「四季」为题征集三至十五分钟原创短片，评审团由导演与摄影师组成。</p>
+        <ol>
+          <li>主题：四季中的某一天</li>
+          <li>形式：纪实、剧情、实验均可</li>
+          <li>奖励：展映机会与高清素材支持</li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S5 创作者矩阵：双列简介 ===== -->
+<section class="c91-sec" id="c91-authors">
+  <div class="c91-container">
+    <div class="c91-sec-head">
+      <div>
+        <div class="c91-sec-kicker">Creators · 创作者</div>
+        <h2>91传媒照片的创作者矩阵</h2>
+        <p>他们来自不同城市、不同职业，共同点是愿意为一段画面花足够长的时间。</p>
+      </div>
+      <button class="c91-btn c91-btn-ghost" type="button" id="c91AuthorMore">了解入驻方式</button>
+    </div>
+
+    <div class="c91-authors">
+      <article class="c91-author">
+        <div class="c91-avatar" style="background:linear-gradient(140deg,#ff5c39,#b32a10)">周</div>
+        <div class="c91-author-info">
+          <h3>周砚白 <span>签约导演</span></h3>
+          <div class="c91-author-field">纪录片 / 城市影像</div>
+          <p>前新闻摄影记者，转做纪实影像八年。《城市呼吸》系列导演，习惯在拍摄前先在同一地点静坐三天，等一个不被打扰的瞬间。</p>
+          <div class="c91-author-nums"><span>作品 <b>86</b></span><span>粉丝 <b>12.6万</b></span></div>
+        </div>
+      </article>
+
+      <article class="c91-author">
+        <div class="c91-avatar" style="background:linear-gradient(140deg,#37e0b0,#14785f)">林</div>
+        <div class="c91-author-info">
+          <h3>林小满 <span>年度创作者</span></h3>
+          <div class="c91-author-field">人物访谈 / 在地文化</div>
+          <p>拍了十年菜市场，擅长在不打扰的前提下靠近人物。她的访谈片少有旁白，靠现场声音与停顿完成叙事。</p>
+          <div class="c91-author-nums"><span>作品 <b>142</b></span><span>粉丝 <b>18.3万</b></span></div>
+        </div>
+      </article>
+
+      <article class="c91-author">
+        <div class="c91-avatar" style="background:linear-gradient(140deg,#ffc247,#c07a00)">徐</div>
+        <div class="c91-author-info">
+          <h3>徐一帧 <span>教程主理人</span></h3>
+          <div class="c91-author-field">摄影教程 / 构图拆解</div>
+          <p>影视摄影专业出身，做教程六年，坚持用同一场景拍六种机位再做对照讲解。被观众称为「最不玄学的构图老师」。</p>
+          <div class="c91-author-nums"><span>作品 <b>118</b></span><span>粉丝 <b>24.1万</b></span></div>
+        </div>
+      </article>
+
+      <article class="c91-author">
+        <div class="c91-avatar" style="background:linear-gradient(140deg,#7f8ff5,#3b46a8)">沈</div>
+        <div class="c91-author-info">
+          <h3>沈野 <span>旅行影像作者</span></h3>
+          <div class="c91-author-field">旅行见闻 / 户外活动</div>
+          <p>走路比坐车多的旅行者，擅长无旁白影像。他认为风景本身已经足够吵，创作者要做的是把嘴闭上。</p>
+          <div class="c91-author-nums"><span>作品 <b>64</b></span><span>粉丝 <b>9.7万</b></span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S6 榜单 + S6 评价双列 ===== -->
+<section class="c91-sec c91-sec-alt" id="c91-comments">
+  <div class="c91-container">
+    <div class="c91-sec-head">
+      <div>
+        <div class="c91-sec-kicker">Ranking &amp; Reviews</div>
+        <h2>数据榜单与真实口碑</h2>
+        <p>由播放、收藏与社区评价综合生成，每周更新一次，接受监督。</p>
+      </div>
+    </div>
+
+    <div class="c91-rank-grid">
+      <div class="c91-rank-col">
+        <h3><i></i>热度榜</h3>
+        <ul>
+          <li><span class="c91-rank-no">1</span>《三分法之外》<span class="c91-rank-val">13.7万</span></li>
+          <li><span class="c91-rank-no">2</span>《城市呼吸》第四季<span class="c91-rank-val">12.4万</span></li>
+          <li><span class="c91-rank-no">3</span>《夜市之后》<span class="c91-rank-val">8.9万</span></li>
+          <li><span class="c91-rank-no">4</span>《她说她拍了二十年》<span class="c91-rank-val">6.4万</span></li>
+          <li><span class="c91-rank-no">5</span>《沿着海岸线走一百公里》<span class="c91-rank-val">5.1万</span></li>
+        </ul>
+      </div>
+      <div class="c91-rank-col">
+        <h3><i></i>新人榜</h3>
+        <ul>
+          <li><span class="c91-rank-no">1</span>陆榫 · 手作影像<span class="c91-rank-val">新晋</span></li>
+          <li><span class="c91-rank-no">2</span>何遇 · 生活方式<span class="c91-rank-val">新晋</span></li>
+          <li><span class="c91-rank-no">3</span>陈粥粥 · 日常记录<span class="c91-rank-val">+6</span></li>
+          <li><span class="c91-rank-no">4</span>苏霁 · 情感故事<span class="c91-rank-val">+3</span></li>
+          <li><span class="c91-rank-no">5</span>孟迟 · 声景采集<span class="c91-rank-val">+2</span></li>
+        </ul>
+      </div>
+      <div class="c91-rank-col">
+        <h3><i></i>口碑榜</h3>
+        <ul>
+          <li><span class="c91-rank-no">1</span>《夜市之后》<span class="c91-rank-val">9.6 分</span></li>
+          <li><span class="c91-rank-no">2</span>《一平米书房》<span class="c91-rank-val">9.4 分</span></li>
+          <li><span class="c91-rank-no">3</span>《木工房的午后》<span class="c91-rank-val">9.2 分</span></li>
+          <li><span class="c91-rank-no">4</span>《城市呼吸》第四季<span class="c91-rank-val">9.1 分</span></li>
+          <li><span class="c91-rank-no">5</span>《她说她拍了二十年》<span class="c91-rank-val">8.9 分</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="c91-comments" style="margin-top:32px">
+      <article class="c91-comment">
+        <div class="c91-comment-top"><div class="c91-avatar" style="background:#2d3a52">阿</div><span class="c91-comment-name">阿栗不加班</span><span class="c91-comment-time">2 小时前</span></div>
+        <p>《夜市之后》看到最后摊主自己吃饭那段，突然就哭了。没有煽情音乐，就是筷子碰碗的声音，比什么都重。</p>
+        <div class="c91-comment-foot"><span>♡ 128</span><span>回复 12</span></div>
+      </article>
+      <article class="c91-comment">
+        <div class="c91-comment-top"><div class="c91-avatar" style="background:#4a3a1c">镜</div><span class="c91-comment-name">镜头里的风</span><span class="c91-comment-time">5 小时前</span></div>
+        <p>教程区是真的干货。徐一帧那期把同一棵树拍六遍做对比，我第一次真正理解「构图是为了叙事」，不是背诵三分法。</p>
+        <div class="c91-comment-foot"><span>♡ 96</span><span>回复 7</span></div>
+      </article>
+      <article class="c91-comment">
+        <div class="c91-comment-top"><div class="c91-avatar" style="background:#2b4a3f">小</div><span class="c91-comment-name">小满的邻居</span><span class="c91-comment-time">昨天</span></div>
+        <p>作为一个在本地生活了三十年的观众，想谢谢平台把菜市场拍得这么体面。没有猎奇视角，这点很难得。</p>
+        <div class="c91-comment-foot"><span>♡ 64</span><span>回复 4</span></div>
+      </article>
+      <article class="c91-comment">
+        <div class="c91-comment-top"><div class="c91-avatar" style="background:#4a2b4a">大</div><span class="c91-comment-name">大橙子拍片记</span><span class="c91-comment-time">昨天</span></div>
+        <p>提一个小建议：希望高清下载能标注具体码率和水印位置，做二次剪辑的时候会方便很多。整体体验已经很好了。</p>
+        <div class="c91-comment-foot"><span>♡ 41</span><span>回复 9</span></div>
+      </article>
+      <article class="c91-comment">
+        <div class="c91-comment-top"><div class="c91-avatar" style="background:#3a2d5a">录</div><span class="c91-comment-name">录音笔与相机</span><span class="c91-comment-time">2 天前</span></div>
+        <p>投稿流程比想象中顺，上传后三天内有编辑给反馈，不是模板回复，是真的指出第二分钟那段声画不同步。这种细节让人愿意继续投。</p>
+        <div class="c91-comment-foot"><span>♡ 87</span><span>回复 5</span></div>
+      </article>
+      <article class="c91-comment">
+        <div class="c91-comment-top"><div class="c91-avatar" style="background:#2b3a4a">慢</div><span class="c91-comment-name">慢半拍先生</span><span class="c91-comment-time">2 天前</span></div>
+        <p>从照片时代就在关注，现在视频板块越做越扎实。唯一希望专题更新别太慢，等「城市呼吸」新一集等得有点久。</p>
+        <div class="c91-comment-foot"><span>♡ 33</span><span>回复 3</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S7 企业动态 + 合作品牌 ===== -->
+<section class="c91-sec" id="c91-news">
+  <div class="c91-container">
+    <div class="c91-sec-head">
+      <div>
+        <div class="c91-sec-kicker">News · 企业动态</div>
+        <h2>企业动态与官方发布</h2>
+        <p>关于91传媒照片的运营进展、评审标准调整与合作公告。</p>
+      </div>
+    </div>
+
+    <div class="c91-two-col">
+      <ul class="c91-news">
+        <li>
+          <time>2026/11/20</time>
+          <div>
+            <h3>「光影四季」影像挑战赛正式开放报名</h3>
+            <p>面向全平台创作者征集三至十五分钟原创短片，评审由导演、摄影师与编辑组成，12 月 1 日截止。</p>
+          </div>
+        </li>
+        <li>
+          <time>2026/11/12</time>
+          <div>
+            <h3>高清正版片库完成年度修复计划</h3>
+            <p>共修复历年纪录片与访谈作品 46 部，统一提升至高清规格，并补充中英双语字幕。</p>
+          </div>
+        </li>
+        <li>
+          <time>2026/10/30</time>
+          <div>
+            <h3>社区评价规范更新与创作者申诉通道上线</h3>
+            <p>新增对画质、字幕、授权问题的分类响应机制，承诺 48 小时内给出处理进度。</p>
+          </div>
+        </li>
+        <li>
+          <time>2026/09/18</time>
+          <div>
+            <h3>秋季线下放映会完成三城巡展</h3>
+            <p>先后在三座城市举办创作者放映与映后对谈，累计到场观众超过一千两百人次。</p>
+          </div>
+        </li>
+      </ul>
+
+      <div>
+        <h3 style="font-size:15px;margin-bottom:14px">合作品牌与伙伴</h3>
+        <div class="c91-partners">
+          <div class="c91-partner">城市影像档案馆</div>
+          <div class="c91-partner">拾光器材实验室</div>
+          <div class="c91-partner">木与火手作工坊</div>
+          <div class="c91-partner">在地文化基金会</div>
+          <div class="c91-partner">独立放映联盟</div>
+          <div class="c91-partner">声景采集计划</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 投稿 CTA ===== -->
+<section class="c91-sec" style="padding-top:0">
+  <div class="c91-container">
+    <div class="c91-cta">
+      <div>
+        <h2>把你拍的那一段，交给91传媒照片</h2>
+        <p>无论是一次街头偶遇，还是一次长达数年的跟拍，只要它足够真实，我们都愿意给它一个被认真观看的位置。</p>
+      </div>
+      <div class="c91-actions">
+        <button class="c91-btn c91-btn-solid" type="button" id="c91CtaSubmit">我要投稿</button>
+        <button class="c91-btn c91-btn-ghost" type="button" id="c91CtaFeedback">反馈建议</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S7 FAQ ===== -->
+<section class="c91-sec c91-sec-alt" id="c91-faq">
+  <div class="c91-container">
+    <div class="c91-sec-head">
+      <div>
+        <div class="c91-sec-kicker">Help · 帮助中心</div>
+        <h2>常见问题：关于91传媒照片官网使用</h2>
+        <p>投稿、授权、播放与社区规则的高频疑问，点击展开查看。</p>
+      </div>
+    </div>
+
+    <div class="c91-faq">
+      <details>
+        <summary>如何向91传媒照片投稿自己的影像作品？</summary>
+        <p>点击页面任意「投稿」按钮，填写作品名称、时长、拍摄时间与素材授权说明，上传不超过 4GB 的视频文件或提供正片链接。编辑会在三个工作日内给出初审反馈，通过后进入内容复核。</p>
+      </details>
+      <details>
+        <summary>平台对「原创」与「正版」的认定标准是什么？</summary>
+        <p>作品需由投稿者本人或团队独立完成主要拍摄与剪辑，引用的音乐、字体、影像素材须有合法授权或属于可商用免费范围。审核时会核对素材来源说明，无法提供说明的作品不予上线。</p>
+      </details>
+      <details>
+        <summary>投稿后多久可以上线？能否修改已发布作品？</summary>
+        <p>通过复核后一般在一周内安排上线，专题作品会配合栏目更新节奏。已发布作品可申请修改字幕与简介，片头片尾等主体内容的替换需重新走一次复核流程。</p>
+      </details>
+      <details>
+        <summary>观看高清版本需要付费吗？</summary>
+        <p>常规高清版本免费观看。部分历史修复影片与合作机构的版权作品会标注观看条件，页面会明确提示，不存在隐藏收费。</p>
+      </details>
+      <details>
+        <summary>我能下载平台上的作品做二次剪辑吗？</summary>
+        <p>未经创作者与平台双方书面授权，不得下载用于二次剪辑或商业用途。教学演示、影评引用等合理使用场景，请先通过反馈入口提交说明。</p>
+      </details>
+      <details>
+        <summary>如何成为签约创作者？</summary>
+        <p>连续提交三部以上原创作品并通过复核，或在平台专题企划中表现突出的创作者，会收到编辑部的入驻邀请。入驻后可获得拍摄支持、展映机会与专题优先推荐。</p>
+      </details>
+      <details>
+        <summary>遇到画质、字幕或播放问题怎么反馈？</summary>
+        <p>在对应作品页使用「反馈建议」提交问题描述与设备信息，编辑团队会分类处理，并在 48 小时内同步处理进度。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S8 页脚 ===== -->
+<footer class="c91-footer">
+  <div class="c91-container">
+    <div class="c91-foot-grid">
+      <div class="c91-foot-brand">
+        <div class="c91-logo">
+          <span class="c91-logo-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="#fff"/></svg>
+          </span>
+          <span class="c91-logo-txt">
+            <strong>91传媒照片</strong>
+            <small>官方网站 · 持续运营中</small>
+          </span>
+        </div>
+        <p>91传媒照片官方网站，专注影像记录与视觉创作的企业级视频平台。坚持原创、正版与高清品质，与创作者共同构建值得信赖的内容生态。</p>
+        <div class="c91-foot-social">
+          <button type="button" data-c91-share="微信">微信</button>
+          <button type="button" data-c91-share="微博">微博</button>
+          <button type="button" data-c91-share="QQ">QQ</button>
+          <button type="button" id="c91FootTop" aria-label="回到顶部">↑</button>
+        </div>
+      </div>
+      <div class="c91-foot-col">
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#c91-focus">焦点内容</a></li>
+          <li><a href="#c91-videos">精品视频</a></li>
+          <li><a href="#c91-topics">专题企划</a></li>
+          <li><a href="#c91-essay">关键词解析</a></li>
+        </ul>
+      </div>
+      <div class="c91-foot-col">
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#c91-authors">创作者矩阵</a></li>
+          <li><a href="#c91-comments">口碑评价</a></li>
+          <li><a href="#c91-news">企业动态</a></li>
+          <li><a href="#c91-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div class="c91-foot-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#c91-hero">品牌介绍</a></li>
+          <li><a href="#c91-news">合作洽谈</a></li>
+          <li><a href="#c91-faq">投稿规范</a></li>
+          <li><a href="#c91-faq">版权说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="c91-foot-bottom">
+      <span>© 2026 91传媒照片 版权所有 · 官方网站 · 持续运营中</span>
+      <span>内容审核与版权合作：请通过站内反馈入口联系</span>
+      <span>备案号：影字备 2026-0117 号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="c91-top-btn" id="c91TopBtn" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- Toast -->
+<div class="c91-toast" id="c91Toast" role="status" aria-live="polite"></div>
+
+<!-- 弹窗：投稿 -->
+<div class="c91-modal" id="c91SubmitModal" role="dialog" aria-modal="true" aria-labelledby="c91SubmitTitle">
+  <div class="c91-modal-box">
+    <h3 id="c91SubmitTitle">投稿给91传媒照片</h3>
+    <p>填写作品名称与联系方式，编辑会在三个工作日内与你联系，并同步素材授权说明要求。</p>
+    <input type="text" id="c91SubmitName" placeholder="作品名称 / 创作者昵称" aria-label="作品名称">
+    <textarea id="c91SubmitNote" rows="3" placeholder="一句话介绍你的作品（题材、时长、拍摄时间）" aria-label="作品简介"></textarea>
+    <div class="c91-modal-actions">
+      <button class="c91-btn c91-btn-ghost" type="button" data-c91-close="c91SubmitModal">取消</button>
+      <button class="c91-btn c91-btn-solid" type="button" id="c91SubmitSend">提交</button>
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗：反馈 -->
+<div class="c91-modal" id="c91FeedbackModal" role="dialog" aria-modal="true" aria-labelledby="c91FeedbackTitle">
+  <div class="c91-modal-box">
+    <h3 id="c91FeedbackTitle">反馈与举报</h3>
+    <p>请描述你遇到的问题，包括作品名称与具体现象，我们会分类处理并在 48 小时内同步进度。</p>
+    <textarea id="c91FeedbackNote" rows="4" placeholder="例如：某作品在第 3 分钟出现字幕不同步" aria-label="反馈内容"></textarea>
+    <div class="c91-modal-actions">
+      <button class="c91-btn c91-btn-ghost" type="button" data-c91-close="c91FeedbackModal">取消</button>
+      <button class="c91-btn c91-btn-solid" type="button" id="c91FeedbackSend">发送反馈</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById("c91Toast");
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("c91-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("c91-show"); }, 2200);
+  }
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var burger = document.getElementById("c91Burger");
+  var nav = document.getElementById("c91Nav");
+  burger.addEventListener("click", function(){
+    var open = nav.classList.toggle("c91-open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  nav.addEventListener("click", function(e){
+    if(e.target.tagName === "A"){
+      nav.classList.remove("c91-open");
+      burger.setAttribute("aria-expanded","false");
+    }
+  });
+
+  /* ---------- 搜索前端反馈 ---------- */
+  var searchInput = document.getElementById("c91SearchInput");
+  var searchFeedback = document.getElementById("c91SearchFeedback");
+  var searchData = [
+    "城市呼吸", "夜市之后", "三分法之外", "她说她拍了二十年", "沿着海岸线走一百公里",
+    "一平米书房", "木工房的午后", "菜市场", "构图", "纪录片", "人物访谈", "城市影像",
+    "专题企划", "光影四季", "创作者", "投稿"
+  ];
+  searchInput.addEventListener("input", function(){
+    var q = searchInput.value.trim();
+    if(!q){
+      searchFeedback.classList.remove("c91-on");
+      searchFeedback.textContent = "";
+      return;
+    }
+    var hits = searchData.filter(function(k){ return k.indexOf(q) !== -1; });
+    searchFeedback.classList.add("c91-on");
+    searchFeedback.textContent = hits.length
+      ? "站内匹配到 " + hits.length + " 条相关内容：" + hits.slice(0,4).join("、")
+      : "暂未匹配到「" + q + "」，可尝试更短的关键词或前往帮助中心";
+  });
+
+  /* ---------- 点赞 / 收藏（含 localStorage 无关的即时状态） ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll("[data-c91-like]"), function(btn){
+    btn.addEventListener("click", function(){
+      var numEl = btn.querySelector("b");
+      var n = parseInt(numEl.textContent, 10) || 0;
+      var liked = btn.classList.toggle("c91-liked");
+      if(liked){ n += 1; btn.setAttribute("aria-pressed","true"); }
+      else{ n -= 1; btn.setAttribute("aria-pressed","false"); }
+      numEl.textContent = n;
+    });
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll("[data-c91-save]"), function(btn){
+    btn.addEventListener("click", function(){
+      var saved = btn.classList.toggle("c91-saved");
+      btn.setAttribute("aria-pressed", saved ? "true" : "false");
+      btn.textContent = saved ? "★ 已收藏" : "☆ 收藏";
+      showToast(saved ? "已加入你的收藏夹" : "已取消收藏");
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll("[data-c91-copy]"), function(btn){
+    btn.addEventListener("click", function(){
+      var shareText = "91传媒照片 · 精品影像内容";
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(shareText).then(function(){
+          showToast("内容信息已复制，可粘贴分享");
+        }).catch(function(){
+          showToast("复制失败，请手动长按选择");
+        });
+      }else{
+        showToast("当前环境不支持自动复制，请手动长按选择");
+      }
+    });
+  });
+
+  /* ---------- 分享提示 ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll("[data-c91-share]"), function(btn){
+    btn.addEventListener("click", function(){
+      showToast("已生成" + btn.getAttribute("data-c91-share") + "分享提示，请前往对应应用粘贴");
+    });
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(m){ m.classList.add("c91-show"); }
+  }
+  function closeModal(id){
+    var m = document.getElementById(id);
+    if(m){ m.classList.remove("c91-show"); }
+  }
+  Array.prototype.forEach.call(document.querySelectorAll("[data-c91-close]"), function(btn){
+    btn.addEventListener("click", function(){ closeModal(btn.getAttribute("data-c91-close")); });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll(".c91-modal"), function(m){
+    m.addEventListener("click", function(e){ if(e.target === m){ m.classList.remove("c91-show"); } });
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){
+      Array.prototype.forEach.call(document.querySelectorAll(".c91-modal.c91-show"), function(m){
+        m.classList.remove("c91-show");
+      });
+    }
+  });
+
+  /* ---------- 投稿入口 ---------- */
+  ["c91SubmitBtnTop","c91HeroSubmit","c91CtaSubmit","c91AuthorMore"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el){ el.addEventListener("click", function(){ openModal("c91SubmitModal"); }); }
+  });
+  document.getElementById("c91SubmitSend").addEventListener("click", function(){
+    var name = document.getElementById("c91SubmitName").value.trim();
+    if(!name){
+      showToast("请先填写作品名称或创作者昵称");
+      return;
+    }
+    document.getElementById("c91SubmitName").value = "";
+    document.getElementById("c91SubmitNote").value = "";
+    closeModal("c91SubmitModal");
+    showToast("投稿信息已提交，编辑将在三个工作日内联系你");
+  });
+
+  /* ---------- 反馈入口 ---------- */
+  document.getElementById("c91CtaFeedback").addEventListener("click", function(){ openModal("c91FeedbackModal"); });
+  document.getElementById("c91FeedbackSend").addEventListener("click", function(){
+    var note = document.getElementById("c91FeedbackNote").value.trim();
+    if(!note){
+      showToast("请简单描述你遇到的问题");
+      return;
+    }
+    document.getElementById("c91FeedbackNote").value = "";
+    closeModal("c91FeedbackModal");
+    showToast("反馈已收到，将在 48 小时内同步处理进度");
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById("c91TopBtn");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 560){ topBtn.classList.add("c91-visible"); }
+    else{ topBtn.classList.remove("c91-visible"); }
+  }, { passive:true });
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({ top:0, behavior:"smooth" });
+  });
+  document.getElementById("c91FootTop").addEventListener("click", function(){
+    window.scrollTo({ top:0, behavior:"smooth" });
+  });
+
+  /* ---------- 首屏数据滚动 ---------- */
+  var counters = document.querySelectorAll("[data-c91-count]");
+  var counterDone = false;
+  function runCounters(){
+    if(counterDone){ return; }
+    counterDone = true;
+    Array.prototype.forEach.call(counters, function(el){
+      var target = parseInt(el.getAttribute("data-c91-count"), 10) || 0;
+      var start = null;
+      var dur = 1300;
+      function step(ts){
+        if(!start){ start = ts; }
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = Math.floor(target * eased);
+        el.textContent = val.toLocaleString("zh-CN");
+        if(p < 1){ requestAnimationFrame(step); }
+        else{ el.textContent = target.toLocaleString("zh-CN"); }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCounters(); io.disconnect(); }
+      });
+    }, { threshold:.3 });
+    io.observe(document.querySelector(".c91-hero-stats"));
+  }else{
+    runCounters();
+  }
+
+  /* ---------- 标签筛选 ---------- */
+  var chips = document.querySelectorAll("#c91-focus .c91-chip");
+  Array.prototype.forEach.call(chips, function(chip){
+    chip.addEventListener("click", function(){
+      Array.prototype.forEach.call(chips, function(c){ c.classList.remove("c91-active"); });
+      chip.classList.add("c91-active");
+      showToast("已切换筛选：" + chip.textContent + "（示例筛选反馈）");
+    });
+  });
+
+})();
+</script>
+</body>
+  </html>
